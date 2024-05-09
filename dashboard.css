@@ -339,6 +339,8 @@ h1 {
     transform: scale(1.1); /* Add a slight scale effect on hover */
 }
 
+
+
 /* show the button when user scrolls down */
 body.scroll-down .back-to-top {
     display: block;

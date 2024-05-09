@@ -129,3 +129,20 @@ button a {
     text-decoration: none;
     color: white;
 }
+
+.nav{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(137, 193, 53);
+    width: 100%;
+    height: auto;
+    
+}
+li{
+    list-style-type: none;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+}
