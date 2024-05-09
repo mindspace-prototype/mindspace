@@ -257,7 +257,9 @@ nav li a:hover{
 
 
 h1 {
-    transform: translateX(60%);
+    /* transform: translateX(50%); */
+    display: flex;
+    justify-content: center;
 }
 
 #scrollup{
