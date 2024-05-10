@@ -58,6 +58,7 @@ li:not(:first-child) {
     position: absolute;
     left: 100%;
     transform: translate(-67%, -16.7vh);
+    cursor: pointer;
 }
 
 .foot {
@@ -83,6 +84,7 @@ main {
     color: #72D34F;
     cursor: default;
     animation: fadeIn 1s ease-in-out;
+    text-align: center;
 }
 
 .grid {
@@ -309,6 +311,7 @@ h1 {
         left: 100%;
         transform: translate(-40%, -16.7vh);
     }
+    
     li:not(:first-child) {
         display: none;
     }
@@ -354,5 +357,6 @@ body.scroll-down .back-to-top {
         transform: translateY(0);
     }
 }
+
 
 
