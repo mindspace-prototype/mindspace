@@ -10,6 +10,11 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    
+    background-image: url('/green2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body::-webkit-scrollbar {
@@ -23,7 +28,7 @@ nav {
     color: #fff;
     height: 12vh;
     font-size: 2.5vh;
-    font-weight: 900;
+    font-weight: 500;
     padding: 2rem;
     width: 100%;
     top: 0;
@@ -33,7 +38,22 @@ nav {
     border-bottom-right-radius: 20px;
 
 }
-
+.navbar li a{
+    border:solid 1px transparent;
+    padding :10px;
+    
+    }
+    .navbar li a:hover{
+        border-radius: 5px;
+    text-decoration: none;
+        background-color: aliceblue;
+    color:#45862e;
+    
+    }
+    
+    h1{
+        text-align: center;
+    }
 ul {
     display: flex;
     align-items: center;
@@ -90,6 +110,7 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
     padding : 4rem;
+    backdrop-filter: blur(50px);
 }
 
 .grid:nth-of-type(2) {
