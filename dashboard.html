@@ -10,13 +10,19 @@
     <script src="https://kit.fontawesome.com/c17b038730.js", crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dashboard.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <!-- aos stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MindSpace</title>
 </head>
 <body>
-    <nav data-aos="fade-down" data-aos-duration="1000" >
-        <ul>
+    <nav  data-aos="fade-down" data-aos-duration="1000" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+               <ul>
             <li><img src="img/logo.png" alt="logo" class="logo"></li>
             <li><a href="#app">Applications</a></li>
             <li><a href="#book">Books</a></li> 
@@ -24,12 +30,15 @@
             <li><a href="#art">Articles</a></li>
             <li><a href="#conf">Talks and Podcasts</a></li>   
         </ul>
+            </div>
+        </div>
     </nav>
+
     <!-- Grid Links -->
     <main>
         <!-- <h1 class="heading">Enter your Space</h1> -->
         <div id="app">
-        <h1 class="heading">Applications</h1>
+        <h3 class="heading">Applications</h3>
             <div class="grid">
                 <div data-tilt class="left">Nyxo</div>
                 <div data-tilt class="left">Sanvello</div>
@@ -41,14 +50,18 @@
                 <div data-tilt class="right">Anxio.us</div>
             </div>
         </div>
-        <h1 id="book" class="heading">Books</h1>
+        <h3 id="book" class="heading">Books</h3>
         <div class="grid2">
-            <div data-tilt class="left"><a href="https://www.amazon.in/Technology-Mental-Health-Applications-Supervision/dp/0398091056"><img src="https://m.media-amazon.com/images/I/51wHgzyRe0L._SY466_.jpg" id="bookimg"></a></div>
-            <div data-tilt class="left"><a href="https://www.amazon.in/Use-Technology-Mental-Health-Applications/dp/0398079544"><img src="https://m.media-amazon.com/images/I/51hBkqxS71L._SY466_.jpg" id="bookimg"></a></div>
-            <div data-tilt class="right"><a href="https://www.amazon.in/Technology-Mental-Health-Foundations-Routledge/dp/0367773597"><img src="https://m.media-amazon.com/images/P/0367773597.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg"></a></div>
-            <div data-tilt class="right"><a href="https://arcus-www.amazon.in/Therapy-Tech-Digital-Transformation-Healthcare-ebook/dp/B09FYRYLXF"><img src="https://m.media-amazon.com/images/P/B09FYRYLXF.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/Technology-Mental-Health-Applications-Supervision/dp/0398091056"><img src="https://m.media-amazon.com/images/I/51wHgzyRe0L._SY466_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/Use-Technology-Mental-Health-Applications/dp/0398079544"><img src="https://m.media-amazon.com/images/I/51hBkqxS71L._SY466_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/dp/0063138808"><img src="https://m.media-amazon.com/images/I/71SPjJ+UnLL._SL1500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/dp/0062312677"><img src="https://m.media-amazon.com/images/I/918hM+7TOxL._SL1500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/Black-Swan-Impact-Highly-Improbable/dp/0141034599"><img src="https://m.media-amazon.com/images/I/81IebQqqWtL._SL1500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/Antifragile-Things-that-Gain-Disorder/dp/0141038225"><img src="https://m.media-amazon.com/images/I/81MS6HSVdsL._SL1500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="right"><a href="https://www.amazon.in/Technology-Mental-Health-Foundations-Routledge/dp/0367773597"><img src="https://m.media-amazon.com/images/P/0367773597.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="right"><a href="https://arcus-www.amazon.in/Therapy-Tech-Digital-Transformation-Healthcare-ebook/dp/B09FYRYLXF"><img src="https://m.media-amazon.com/images/P/B09FYRYLXF.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg" class="b"></a></div>
         </div>
-        <h1 id="org" class="heading">Organizations</h1>
+        <h3  id="org"class="heading" style="margin-top: 50px; text-align: center;" >Organizations</h3>
         <div class="grid">
             <div data-tilt class="left">Black Minds Matter</div>
             <div data-tilt class="left">Brown Sisters Speak</div>
@@ -59,7 +72,7 @@
             <div data-tilt class="right">7 Cups</div>
             <div data-tilt class="right">Therapy Karo</div>
         </div>
-        <h1 id="art" class="heading">Articles</h1>
+        <h3 id="art" class="heading">Articles</h3>
         <div class="grid">
             <div data-tilt class="left">Click Here</div>
             <div data-tilt class="left">Click Here</div>
@@ -70,7 +83,7 @@
             <div data-tilt class="right">Click Here</div>
             <div data-tilt class="right">Click Here</div>
         </div>
-        <h1 id="conf" class="heading">Talks and Conferences</h1>
+        <h3 id="conf" class="heading">Talks and Conferences</h3>
         <div class="grid">
             <div data-tilt class="left">Click Here</div>
             <div data-tilt class="left">Click Here</div>
@@ -100,7 +113,7 @@
     
         <div class="col2">
             <div data-aos="fade-left" data-aos-duration="1000" class="about-section">
-                <h1>About Us</h1>
+                <h3 class="head">About Us</h3>
                 <p>
                     Hi there! Welcome to our platform dedicated to mental fitness. We provide various links and resources
                     to help you embark on your journey to mental well-being.
@@ -112,30 +125,75 @@
                     We wish you a joyful and enthusiastic journey towards improving your mental health, creating space for happiness and well-being.
                 </p>
             </div>
+   
             
-            <div class="developer-section">
-                <h1>Developers</h1>
-                <ul class="foot-names">
-                    <li>
-                        <a target="_blank" href="https://github.com/bhaskar1001101">
-                            <img src="img/bhasky.jpg" alt="Bhaskar's Profile Picture">
-                            <h3>Bhaskar Metiya</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/TeeWrath">
-                            <img src="img/sub.jpg" alt="Subroto's Profile Picture">
-                            <h3>Subroto Banerjee</h3>
-                        </a>
-                    </li>
-                </ul>
+
+
+            <div class="containe">
+                <div class="row mt-5">
+                    <div class="col-12 col-md-7 d-flex">
+                        <h2 class="headin">Developers</h2>
+                        <div class="foot-names">
+                            <a target="_blank" href="https://github.com/bhaskar1001101" class="d-flex align-items-center">
+                                <img src="img/bhasky.jpg" alt="Bhaskar's Profile Picture" style="width: 180px; height: 200px;">
+                                <h3 class="mt-6" style="margin-top: 45px;">Bhaskar Metiya</h3>
+                            </a>
+                        </div>
+                        <div class="foot-names">
+                            <a target="_blank" href="https://github.com/TeeWrath" class="d-flex align-items-center ml-3">
+                                <img src="img/sub.jpg" alt="Subroto's Profile Picture" style="width: 180px; height: 200px;">
+                                <h3 class="ml-3"  style="margin-top: 45px;">Subroto Banerjee</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    
-    
-        
+ 
+
+            <div class="container" style="text-align: left;">
+                <div class="content">
+                  <div class="left-side">
+                    <div class="address details">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="topic">Address</div>
+                      <div class="text-one">klmsinmk</div>
+                      <div class="text-two">Bsdjjnm,mgar 06</div>
+                    </div>
+                    <div class="phone details">
+                      <i class="fas fa-phone-alt"></i>
+                      <div class="topic">Phone</div>
+                      <div class="text-one">+123456789</div>
+                      <div class="text-two">+123456789</div>
+                    </div>
+                    <div class="email details">
+                      <i class="fas fa-envelope"></i>
+                      <div class="topic">Email</div>
+                      <div class="text-one">abc@gmail.com</div>
+                      <div class="text-two">info.aba@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+                  <form action="#">
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                        <input type="text" placeholder="Enter your Massage">
+                    </div>
+                    <div class="button">
+                      <input type="button" value="Send Now" >
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+
+
 
     <!-- aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -229,3 +287,97 @@
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<script>
+    AOS.init();
+    // array on 10 random links fill them up
+    const links = [
+        // apps
+        // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+        "https://nyxo.app",
+        "https://sanvello.com/",
+        "https://writewithwrabit.com",
+        // "https://www.quirk.fyi/",
+        "https://three-good-things.glitch.me/",
+        "https://www.calm.com/",
+        "https://www.headspace.com/",
+        "http://wakeupti.me/",
+        "http://weareanxio.us",
+        // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+        // books
+        "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+        "https://leanpub.com/osmi-guidelines-for-employers",
+        "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+        "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
+        // organizations
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+        "https://twitter.com/BrownSistersSpk",
+        "https://osmihelp.org",
+        "https://selfcare.tech",
+        "http://mhprompt.org",
+        "https://www.if-me.org",
+        "https://www.7cups.com/",
+        "https://therapykaro.com/",
+        "https://www.talkspace.com/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+        // articles
+        "https://mymoodpath.com/en/",
+        "http://blackmindsmatter.co.uk/",
+        "https://dev.to/desi/encouraging-wellness-in-a-remote-workplace-17m5",
+        "https://freeonlinetherapy.org/",
+        "https://www.reddit.com/r/catpictures/",
+        "https://dev.to/andrew/its-okay-to-not-be-okay",
+        "https://mentalhealthhackers.org/",
+        "http://everybodyhasabrain.com/",
+        "https://compassionatecoding.com",
+        "https://mymoodpath.com/en/",
+        "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+        "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+        "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+        "https://mentalhealth-kb.net/",
+        "https://www.baatn.org.uk/",
+        "https://www.blacktherapistsrock.com/",
+        "https://www.youtube.com/watch?v=P4wWbHvNAvY",
+        "https://mobile.va.gov/app/ptsd-coach",
+        "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
+        "https://www.onlinecounselling4u.com/",
+        "https://mymoodpath.com/en/",
+        "https://writewithwrabit.com",
+        "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+        "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+        "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+        "https://mentalhealth-kb.net/",
+        "https://www.baatn.org.uk/",
+        "https://www.blacktherapistsrock.com/",
+    ];
+    
+    // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
+    const gridItems = document.querySelectorAll(".grid div");
+    gridItems.forEach((item, index) => {
+        // randomize index between 0 to 
+        item.addEventListener("click", () => {
+            // get style of the grid item and animate scale to 2 and then open the link
+            item.style.transform = "scale(25)";
+            item.style.zIndex = "10";
+            item.style.color = "#72D34F";
+            // wait for 0.5s and then open the link
+            setTimeout(() => {
+                window.open(links[index]);
+                item.style.transform = "scale(1)";
+                item.style.zIndex = "1";
+            }, 500);
+        });
+    });
+
+</script>
