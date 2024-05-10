@@ -21,7 +21,7 @@ nav {
     z-index: 20;
     background-color: #72D34F;
     color: #fff;
-    height: 12vh;
+    height: 10vh;
     font-size: 2.5vh;
     font-weight: 900;
     padding: 2rem;
@@ -29,8 +29,8 @@ nav {
     top: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
 
 }
 
@@ -51,6 +51,15 @@ li {
 /* select all li except first one */
 li:not(:first-child) {
     transform: translateX(260px);
+}
+
+li a {
+    display: inline-block;
+    transition: transform 0.8s ease; /* Smooth animation */
+}
+
+li:hover a {
+    transform: translateY(-3px); /* Lift up on hover */
 }
 
 .logo {
@@ -191,8 +200,8 @@ nav li a:hover{
     padding: 35px;
     display: flex;
     background: #72D34F;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
 }
 
 .col1 {
@@ -256,8 +265,12 @@ nav li a:hover{
 
 
 
-h1 {
+.developer-section .foot-heading {
     transform: translateX(60%);
+}
+
+.developer-section .dev-name{
+    margin-top: 20px;
 }
 
 #scrollup{
