@@ -121,19 +121,19 @@ main {
     outline: 5px solid #72D34F;
 }
 
-.grid div:not(hover), .grid2 div:not(hover) {
+/* .grid div:not(hover), .grid2 div:not(hover) {
     background-color: white;
     transition: linear background-color 2.5s;
 }
 
 .grid div::selection, .grid2 div::selection {
     background-color: black;
-}
+} */
 
-#bookimg {
+/* #bookimg {
     height: 40vh;
-}
-
+} */
+/* 
 .grid2 {
     display: grid;
     grid-gap: 2rem;
@@ -174,7 +174,7 @@ main {
 
 .right{
     animation: slideOut 1s ease-in-out;
-}
+} */
 
 nav li a{
     text-decoration: none;
@@ -355,4 +355,43 @@ body.scroll-down .back-to-top {
     }
 }
 
+// BOOKS SECTION
 
+section {
+    display: block;
+}
+
+.collection {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.playlist {
+    background-color: #2b2c28;
+    padding: 0.75em;
+    border-radius: 1em;
+    margin: 1rem;
+    display: inline-block;
+}
+.playlist a{
+		display:flow-root;
+		width: 100%; 
+        height: 100%;
+		text-decoration:solid;
+		color: white;
+		background-color: black;
+		border: 2px solid black;
+		padding: 0.5em;
+		border-radius: 1em;
+		text-align: center;
+		align-items: center;
+		margin-top: 1rem;
+        margin-bottom: 10px;
+	  
+}
+.playlist a :hover{
+	background-color: rgba(120, 113, 113, 0.947);
+}
