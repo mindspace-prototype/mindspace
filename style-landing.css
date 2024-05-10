@@ -110,7 +110,7 @@ button {
     width: 250px;
     height: 55px;
     border: none;
-    border-radius: 12px;
+    border-radius: 120px;
     color: white;
     font-size: 18px; /* Adjusted font size */
     font-weight: 700;
@@ -119,13 +119,14 @@ button {
 }
 
 button:hover {
-    width: 275px;
+    width: 270px;
     height: 60px;
     background-color: #4aaf3a; /* Adjusted hover color */
-    border-radius: 16px;
+    border-radius: 120px;
 }
 
 button a {
     text-decoration: none;
     color: white;
 }
+
