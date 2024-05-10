@@ -4,62 +4,334 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- linking css stylesheet -->
-    <link rel="stylesheet" href="style-landing.css">
-    <link rel="icon" type="image/png" href="img/Favicon.png">
-    <!-- google font link -->
+    <link rel="icon" href="./img/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c17b038730.js", crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <!-- aos stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MindSpace</title>
 </head>
 <body>
-    <!-------------------------------------------- Background image --------->
-    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="img/pexels-pixabay-160994.jpg" ></div>
-
-    <!------------------------------------------------------- Heading and subtitle -->
-    <div class="heading-subtitle">
-        <div class="heading">
-            <h1 class="mind" data-aos="fade-right" data-aos-duration="1000">Mind</h1>
-            <h1 class="space" data-aos="fade-left" data-aos-duration="1000">Space</h1>
+    <nav  data-aos="fade-down" data-aos-duration="1000" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+               <ul>
+            <li><img src="img/logo.png" alt="logo" class="logo"></li>
+            <li><a href="#app">Applications</a></li>
+            <li><a href="#book">Books</a></li> 
+            <li><a href="#org">Organizations</a></li>
+            <li><a href="#art">Articles</a></li>
+            <li><a href="#conf">Talks and Podcasts</a></li>   
+        </ul>
+            </div>
         </div>
-        <img class="find" src="img/Finding peace of mind, one space at a time.png" alt="">
-    </div>
+    </nav>
 
-    <!----------------------------------------------------------------------- QUOTES ------------------------------------------------------------>
-    <div data-aos="fade-in" data-aos-duration="1000" class="wrapper">
-        <ul class="dynamic-text">
-            <li><span> "Mental health is not a destination but a process. It's about how you drive, not where you're going." - Noam Shpancer</span></li>
-            <li><span>"The greatest wealth is mental health." - Unknown</span></li>
-            <li><span>"It's not the load that breaks you down, it's the way you carry it."  - Lou Holtz</span></li>
-            <li><span>"Your illness does not define you. Your strength and courage does."  - Unknown</span></li>
-            <li><span>"The bravest thing I ever did was continuing my life when I wanted to die."  - Juliette Lewis</span></li>
-            <li><span>"It's okay to not be okay, as long as you don't stay there."  - Unknown</span></li>
-            <li><span>"The only thing more exhausting than having a mental illness is pretending like you don't."  - Unknown</span></li>
-            <li><span>"Healing takes time, and asking for help is a courageous step."  - Mariska Hargitay</span></li>
-            <li><span>"The worst thing you can do for your mental health is to pretend like you don't need help."  - Unknown</span></li>
-            <li><span>"Mental pain is less dramatic than physical pain, but it is more common and also harder to bear."  - C.S. Lewis</span></li>
-            <li><span>"Never give up on someone with a mental illness. When "I" is replaced by "We", illness becomes wellness."  - Shannon L. Alder</span></li>
-            <li><span>"Your mental health is a priority. Your happiness is an essential. Your self-care is a necessity."  - Unknown</span></li>
-            <li><span>"The more you know yourself, the more clarity there is. Self-knowledge has no end."  - Jiddu Krishnamurti</span></li>
-            <li><span>"Recovery is not one and done. It is a lifelong journey that takes place one day, one step at a time."  - Unknown</span></li>
-            <li><span>"When you're feeling your worst, that's when you get to know yourself the best."  - Leslie Grossman</span></li>
-            <li><span>"Your mind is a powerful thing. When you fill it with positive thoughts, your life will start to change."  - Unknown</span></li>
-            <li><span>"Mental health is just as important as physical health."  - Unknown</span></li>
-            <li><span>"You are allowed to be both a masterpiece and a work in progress simultaneously."  - Sophia Bush</span></li>
-            <li><span>"Mental health needs a great deal of attention. It's the final taboo and it needs to be faced and dealt with."  - Adam Ant</span></li>
+    <!-- Grid Links -->
+    <main>
+        <!-- <h1 class="heading">Enter your Space</h1> -->
+        <div id="app">
+        <h3 class="heading">Applications</h3>
+            <div class="grid">
+                <div data-tilt class="left">Nyxo</div>
+                <div data-tilt class="left">Sanvello</div>
+                <div data-tilt class="left">Wrabit</div>
+                <div data-tilt class="left">Three Good Things</div>
+                <div data-tilt class="right">Calm</div>
+                <div data-tilt class="right">HeadSpace</div>
+                <div data-tilt class="right">Wake Up Time</div>
+                <div data-tilt class="right">Anxio.us</div>
+            </div>
+        </div>
+        <h3 id="book" class="heading">Books</h3>
+        <div class="grid2">
+            <div data-tilt class="left"><a href="https://www.amazon.in/Technology-Mental-Health-Applications-Supervision/dp/0398091056"><img src="https://m.media-amazon.com/images/I/51wHgzyRe0L._SY466_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="left"><a href="https://www.amazon.in/Use-Technology-Mental-Health-Applications/dp/0398079544"><img src="https://m.media-amazon.com/images/I/51hBkqxS71L._SY466_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="right"><a href="https://www.amazon.in/Technology-Mental-Health-Foundations-Routledge/dp/0367773597"><img src="https://m.media-amazon.com/images/P/0367773597.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg" class="b"></a></div>
+            <div data-tilt class="right"><a href="https://arcus-www.amazon.in/Therapy-Tech-Digital-Transformation-Healthcare-ebook/dp/B09FYRYLXF"><img src="https://m.media-amazon.com/images/P/B09FYRYLXF.01._SCLZZZZZZZ_SX500_.jpg" id="bookimg" class="b"></a></div>
+        </div>
+        <h3  id="org" class="heading" style="margin-top: 50px; text-align: center;" >Organizations</h3>
+        <div class="grid">
+            <div data-tilt class="left">Black Minds Matter</div>
+            <div data-tilt class="left">Brown Sisters Speak</div>
+            <div data-tilt class="left">OSMI</div>
+            <div data-tilt class="left">SelfCare.tech</div>
+            <div data-tilt class="right">MHPrompt</div>
+            <div data-tilt class="right">If Me</div>
+            <div data-tilt class="right">7 Cups</div>
+            <div data-tilt class="right">Therapy Karo</div>
+        </div>
+        <h3 id="art" class="heading">Articles</h3>
+        <div class="grid">
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+        </div>
+        <h3 id="conf" class="heading">Talks and Conferences</h3>
+        <div class="grid">
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="left">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+            <div data-tilt class="right">Click Here</div>
+        </div>
+    </main>
+ <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="scrollToTop()">
+        <span>&uarr;</span>
     </div>
+    
+    <div class="foot">
+        
+    
+        <div class="col2">
+            <div data-aos="fade-left" data-aos-duration="1000" class="about-section">
+                <h3 class="head">About Us</h3>
+                <p>
+                    Hi there! Welcome to our platform dedicated to mental fitness. We provide various links and resources
+                    to help you embark on your journey to mental well-being.
+                    <br><br>
+                    Our mission is to create a supportive community where users can share their thoughts, feelings, and experiences with others.
+                    <br><br>
+                    This app is a prototype for a larger project we are working on. Stay tuned for more updates!
+                    <br><br>
+                    We wish you a joyful and enthusiastic journey towards improving your mental health, creating space for happiness and well-being.
+                </p>
+            </div>
+   
+            
 
-    <!--------------------------------------------------------------------- ENTRY BUTTON ---------------------------------------------------------------->
-    <div class="button">
-        <button><a href="dashboard.html">Find your Space</a></button>
-    </div>
+
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12 col-md-7 d-flex">
+                        <h2 class="headin">Developers</h2>
+                        <div class="foot-names">
+                            <a target="_blank" href="https://github.com/bhaskar1001101" class="d-flex align-items-center">
+                                <img src="img/bhasky.jpg" alt="Bhaskar's Profile Picture" style="width: 180px; height: 200px;">
+                                <h3 class="mt-6" style="margin-top: 45px;">Bhaskar Metiya</h3>
+                            </a>
+                        </div>
+                        <div class="foot-names">
+                            <a target="_blank" href="https://github.com/TeeWrath" class="d-flex align-items-center ml-3">
+                                <img src="img/sub.jpg" alt="Subroto's Profile Picture" style="width: 180px; height: 200px;">
+                                <h3 class="ml-3"  style="margin-top: 45px;">Subroto Banerjee</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+    
+        
+
     <!-- aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        // array on 10 random links fill them up
+        const links = [
+            // apps
+            // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+            "https://nyxo.app",
+            "https://sanvello.com/",
+            "https://writewithwrabit.com",
+            // "https://www.quirk.fyi/",
+            "https://three-good-things.glitch.me/",
+            "https://www.calm.com/",
+            "https://www.headspace.com/",
+            "http://wakeupti.me/",
+            "http://weareanxio.us",
+            // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+            // books
+            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+            "https://leanpub.com/osmi-guidelines-for-employers",
+            "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+            "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
+            // organizations
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+            "https://twitter.com/BrownSistersSpk",
+            "https://osmihelp.org",
+            "https://selfcare.tech",
+            "http://mhprompt.org",
+            "https://www.if-me.org",
+            "https://www.7cups.com/",
+            "https://therapykaro.com/",
+            "https://www.talkspace.com/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+            // articles
+            "https://mymoodpath.com/en/",
+            "http://blackmindsmatter.co.uk/",
+            "https://dev.to/desi/encouraging-wellness-in-a-remote-workplace-17m5",
+            "https://freeonlinetherapy.org/",
+            "https://www.reddit.com/r/catpictures/",
+            "https://dev.to/andrew/its-okay-to-not-be-okay",
+            "https://mentalhealthhackers.org/",
+            "http://everybodyhasabrain.com/",
+            "https://compassionatecoding.com",
+            "https://mymoodpath.com/en/",
+            "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+            "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+            "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+            "https://mentalhealth-kb.net/",
+            "https://www.baatn.org.uk/",
+            "https://www.blacktherapistsrock.com/",
+            "https://www.youtube.com/watch?v=P4wWbHvNAvY",
+            "https://mobile.va.gov/app/ptsd-coach",
+            "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
+            "https://www.onlinecounselling4u.com/",
+            "https://mymoodpath.com/en/",
+            "https://writewithwrabit.com",
+            "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+            "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+            "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+            "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+            "https://mentalhealth-kb.net/",
+            "https://www.baatn.org.uk/",
+            "https://www.blacktherapistsrock.com/",
+        ];
+        
+        // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
+        const gridItems = document.querySelectorAll(".grid div");
+        gridItems.forEach((item, index) => {
+            // randomize index between 0 to 
+            item.addEventListener("click", () => {
+                // get style of the grid item and animate scale to 2 and then open the link
+                item.style.transform = "scale(25)";
+                item.style.zIndex = "10";
+                item.style.color = "#72D34F";
+                // wait for 0.5s and then open the link
+                setTimeout(() => {
+                    window.open(links[index]);
+                    item.style.transform = "scale(1)";
+                    item.style.zIndex = "1";
+                }, 500);
+            });
+        });
+
     </script>
+
+    <!-- JavaScript -->
+    <script src="dashbboard.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<script>
+    AOS.init();
+    // array on 10 random links fill them up
+    const links = [
+        // apps
+        // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+        "https://nyxo.app",
+        "https://sanvello.com/",
+        "https://writewithwrabit.com",
+        // "https://www.quirk.fyi/",
+        "https://three-good-things.glitch.me/",
+        "https://www.calm.com/",
+        "https://www.headspace.com/",
+        "http://wakeupti.me/",
+        "http://weareanxio.us",
+        // "https://www.mentalhealth.org.uk/campaigns/mental-health-awareness-week", // placeholder
+        // books
+        "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+        "https://leanpub.com/osmi-guidelines-for-employers",
+        "https://leanpub.com/osmi-mental-wellness-in-the-workplace",
+        "https://www.academia.edu/43313933/Ikigai_The_Japanese_Secret_to_a_Long_and_Happy_Life",
+        // organizations
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+        "https://twitter.com/BrownSistersSpk",
+        "https://osmihelp.org",
+        "https://selfcare.tech",
+        "http://mhprompt.org",
+        "https://www.if-me.org",
+        "https://www.7cups.com/",
+        "https://therapykaro.com/",
+        "https://www.talkspace.com/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // placeholder
+        // articles
+        "https://mymoodpath.com/en/",
+        "http://blackmindsmatter.co.uk/",
+        "https://dev.to/desi/encouraging-wellness-in-a-remote-workplace-17m5",
+        "https://freeonlinetherapy.org/",
+        "https://www.reddit.com/r/catpictures/",
+        "https://dev.to/andrew/its-okay-to-not-be-okay",
+        "https://mentalhealthhackers.org/",
+        "http://everybodyhasabrain.com/",
+        "https://compassionatecoding.com",
+        "https://mymoodpath.com/en/",
+        "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+        "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+        "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+        "https://mentalhealth-kb.net/",
+        "https://www.baatn.org.uk/",
+        "https://www.blacktherapistsrock.com/",
+        "https://www.youtube.com/watch?v=P4wWbHvNAvY",
+        "https://mobile.va.gov/app/ptsd-coach",
+        "https://play.google.com/store/apps/details?id=com.smilingmind.app&gl=US&pli=1",
+        "https://www.onlinecounselling4u.com/",
+        "https://mymoodpath.com/en/",
+        "https://writewithwrabit.com",
+        "https://www.youtube.com/watch?v=jGG6Wip_PGg",
+        "http://happyporchradio.com/season-4-episode-3-april-wensel/",
+        "https://www.youtube.com/watch?v=Xfs03Va5pAY", // do not remove this link :P
+        "http://ardentdev.com/011-jerk-programmer-compassionate-coder-april-wensel",
+        "https://mentalhealth-kb.net/",
+        "https://www.baatn.org.uk/",
+        "https://www.blacktherapistsrock.com/",
+    ];
+    
+    // add event listeners to all the grid items and map them to the links such on on clicking the grid item it opens the link
+    const gridItems = document.querySelectorAll(".grid div");
+    gridItems.forEach((item, index) => {
+        // randomize index between 0 to 
+        item.addEventListener("click", () => {
+            // get style of the grid item and animate scale to 2 and then open the link
+            item.style.transform = "scale(25)";
+            item.style.zIndex = "10";
+            item.style.color = "#72D34F";
+            // wait for 0.5s and then open the link
+            setTimeout(() => {
+                window.open(links[index]);
+                item.style.transform = "scale(1)";
+                item.style.zIndex = "1";
+            }, 500);
+        });
+    });
+
+</script>
