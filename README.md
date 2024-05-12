@@ -79,7 +79,7 @@ Before making pull requests please look at our contributing guidelines (coming s
 
 # License & Copyright
 
-The code is this repo is licensed under the <a href="https://github.com/The-MindSpace/MindSpace-Web/blob/master/LICENSE">CC0 1.0 Universal License</a>. Feel free to use and share it as per the license.
+The code in this repo is licensed under the <a href="https://github.com/The-MindSpace/MindSpace-Web/blob/master/LICENSE">CC0 1.0 Universal License</a>. Feel free to use and share it as per the license.
 
 # ✨ Contributors
 
