@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    margin-top: 10;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -46,6 +47,8 @@ li {
     height: 10vh;
     transform: translateX(100px);
     padding-right: 8vw;
+    scroll-timeline:  smooth;
+
 }
 
 /* select all li except first one */
@@ -71,6 +74,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-right: 10px;
     /* height: 100vh; */
     width: 100%;
     /* background-color: #72D34F; */
@@ -78,10 +82,18 @@ main {
     margin-bottom: 5vh;
 }
 
-.heading {
+.heading #app{
+    text-align: left;
+align-items: flex-start;
+}
+.heading{
+    margin-right: 159px;
+    padding-right: 18px;
+    text-align: left;
+    align-self: center;
     font-size: 5vh;
     color: #72D34F;
-    cursor: default;
+    cursor:default;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -116,7 +128,7 @@ main {
     cursor: pointer;
     font-size: larger;
     outline-offset: 5px;
-    transition: linear 0.2s;
+    transition: linear 0.1s;
     background-color: #72D34F;
     outline: 5px solid #72D34F;
 }
@@ -164,23 +176,23 @@ main {
     cursor: pointer;
     font-size: larger;
     outline-offset: 5px;
-    transition: linear 0.2s;
+    transition: linear 0.1s;
     outline: 5px solid #72D34F;
 }
 
 .left{
-    animation: slideIn 1s ease-in-out;
+    animation: slideIn 0.7s ease-in-out;
 }
 
 .right{
-    animation: slideOut 1s ease-in-out;
+    animation: slideOut 0.7s ease-in-out;
 }
 
 nav li a{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    transition: ease 1s;
+    transition: ease 0.7s;
 }
 nav li a:hover{
     text-shadow: 1px 1px black;
@@ -231,7 +243,7 @@ nav li a:hover{
     border-radius: 10px;
     
     margin: 0 10px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.2s ease;
 }
 
 .foot-names img {
@@ -257,7 +269,11 @@ nav li a:hover{
 
 
 h1 {
+    margin-right: 30px;
+    padding-right: 100px;
+    text-align: center;
     transform: translateX(60%);
+    padding-right: 100px;
 }
 
 #scrollup{
