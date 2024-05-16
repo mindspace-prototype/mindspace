@@ -83,7 +83,9 @@ main {
     color: #72D34F;
     cursor: default;
     animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Center the headings */
 }
+
 
 .grid {
     display: grid;
@@ -133,33 +135,40 @@ main {
 #bookimg {
     height: 40vh;
 }
-
 .grid2 {
     display: grid;
     grid-gap: 2rem;
     padding: 4rem;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; /* Center the grid items */
+    grid-template-columns: repeat(4, 1fr); /* Fixed number of columns */
 }
 
 .grid2 div {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content within grid items */
     color: #72D34F;
     font-weight: bolder;
     outline-offset: 3px;
     border-radius: 10px;
-    place-items: center;
-    align-items: center;
     transition: ease 0.4s;
     outline: 3px solid #72D34F;
     box-shadow: rgba(0, 0, 0, 0.3);
-    width: calc(20vh / 4 + 50vw / 4);
-    height: calc(20vh / 3 + 50vw / 3);
+    width: 100%; /* Ensure grid items take full width of their cell */
+    max-width: 250px; /* Set a maximum width for grid items */
+    height: auto; /* Let the height adjust based on content */
     border: 2px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.grid2 div:hover{
+.grid2 div img {
+    width: 100%; /* Ensure images take full width of the grid item */
+    height: auto; /* Adjust height based on width */
+    border-radius: 10px;
+}
+
+.grid2 div:hover {
     color: white;
     cursor: pointer;
     font-size: larger;
@@ -253,12 +262,11 @@ nav li a:hover{
     color: white;
     text-decoration: none;
 }
-
-
-
 h1 {
-    transform: translateX(60%);
+    text-align: center; /* Center the h1 heading */
+    transform: translateX(0);
 }
+
 
 #scrollup{
     display: none;
