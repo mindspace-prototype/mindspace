@@ -87,13 +87,6 @@ body {
     content: "";
     position: absolute;
 }
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 /* Entry Button */
 .button {
@@ -102,8 +95,6 @@ body {
     justify-content: center;
     margin-top: 50px;
 }
-
-
 
 button {
     background-color: #72d34f;
@@ -128,4 +119,93 @@ button:hover {
 button a {
     text-decoration: none;
     color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 4.5vh;
+    }
+
+    .dynamic-text {
+        margin-top: 100px;
+        height: 80px;
+    }
+
+    .dynamic-text li {
+        font-size: 22px;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-img-land img {
+        height: 50vh;
+    }
+
+    .heading-subtitle {
+        transform: translateZ(15vh);
+    }
+
+    .heading {
+        font-size: 4vh;
+        margin-top: -30vh;
+    }
+
+    .dynamic-text {
+        margin-top: 80px;
+        height: 70px;
+    }
+
+    .dynamic-text li {
+        font-size: 20px;
+        line-height: 70px;
+    }
+
+    button {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    button:hover {
+        width: 240px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-img-land img {
+        height: 40vh;
+    }
+
+    .heading-subtitle {
+        transform: translateZ(10vh);
+    }
+
+    .heading {
+        font-size: 3.5vh;
+        margin-top: -25vh;
+    }
+
+    .dynamic-text {
+        margin-top: 60px;
+        height: 60px;
+    }
+
+    .dynamic-text li {
+        font-size: 18px;
+        line-height: 60px;
+    }
+
+    button {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    button:hover {
+        width: 220px;
+        height: 50px;
+    }
 }
