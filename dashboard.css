@@ -31,7 +31,6 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
 
 ul {
@@ -71,9 +70,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* height: 100vh; */
     width: 100%;
-    /* background-color: #72D34F; */
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -89,7 +86,7 @@ main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
-    padding : 4rem;
+    padding: 4rem;
 }
 
 .grid:nth-of-type(2) {
@@ -159,7 +156,7 @@ main {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.grid2 div:hover{
+.grid2 div:hover {
     color: white;
     cursor: pointer;
     font-size: larger;
@@ -168,21 +165,22 @@ main {
     outline: 5px solid #72D34F;
 }
 
-.left{
+.left {
     animation: slideIn 1s ease-in-out;
 }
 
-.right{
+.right {
     animation: slideOut 1s ease-in-out;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: white;
     cursor: pointer;
     transition: ease 1s;
 }
-nav li a:hover{
+
+nav li a:hover {
     text-shadow: 1px 1px black;
     font-size: 2.5vh;
 }
@@ -229,7 +227,6 @@ nav li a:hover{
     width: 100%;
     height: 275px;
     border-radius: 10px;
-    
     margin: 0 10px;
     transition: box-shadow 0.3s ease;
 }
@@ -238,7 +235,6 @@ nav li a:hover{
     width: 200px; /* Set the desired width */
     height: 200px; /* Set the desired height */
     object-fit: cover;
-   
     border-radius: 10px; /* Add border-radius for a consistent look */
 }
 
@@ -254,13 +250,11 @@ nav li a:hover{
     text-decoration: none;
 }
 
-
-
 h1 {
     transform: translateX(60%);
 }
 
-#scrollup{
+#scrollup {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -271,88 +265,102 @@ h1 {
     background-color: greenyellow;
     color: white;
     cursor: pointer;
-    padding: 7px 10px 7px 10px;
+    padding: 7px 10px;
     border-radius: 50%;
     font-size: 18px;
 }
 
-.foot-names{
+.foot-names {
     margin-bottom: 10px;
 }
 
 /* Key Frames */
-@media screen and (max-width: 768px) {
-    .grid {
+@media screen and (max-width: 1024px) {
+    nav {
+        font-size: 2vh;
+        padding: 1.5rem;
+    }
+
+    li {
+        padding-right: 5vw;
+    }
+
+    .logo {
+        transform: translate(-50%, -16.7vh);
+    }
+
+    .grid, .grid2 {
         grid-template-columns: repeat(4, 1fr);
     }
-    .grid:nth-of-type(2) {
-        grid-template-columns: repeat(2, 1fr);
+
+    .grid div, .grid2 div {
+        width: calc(15vh / 6 + 45vw / 6);
+        height: calc(15vh / 6 + 45vw / 6);
     }
-    .grid div {
-        width: calc(20vh / 6 + 50vw / 6);
-        height: calc(20vh / 6 + 50vw / 6);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 1.8vh;
+        padding: 1rem;
     }
-    .grid div:hover {
-        background-color: #72D34F;
-        transition: linear 0.1s;
+
+    li {
+        padding-right: 3vw;
+        transform: translateX(0);
     }
-    .grid div:not(hover) {
-        background-color: white;
-        transition: linear background-color 2.5s;
-    }
-    .grid div::selection {
-        background-color: black;
-    }
+
     .logo {
-        width: 40vh;
-        position: absolute;
-        left: 100%;
+        width: 30vh;
         transform: translate(-40%, -16.7vh);
     }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid div, .grid2 div {
+        width: calc(20vh / 6 + 40vw / 6);
+        height: calc(20vh / 6 + 40vw / 6);
+    }
+
     li:not(:first-child) {
         display: none;
     }
-}
 
-
-
-/* back to top button styles */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #213c15;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    display: none; /* hide by default */
-    transition: background-color 0.3s, transform 0.3s;
-    z-index: 999; 
-    animation: fadeInUp 0.5s ease; /* Entrance animation */
-}
-
-.back-to-top:hover {
-    background-color: #3a8f0f;
-    transform: scale(1.1); /* Add a slight scale effect on hover */
-}
-
-/* show the button when user scrolls down */
-body.scroll-down .back-to-top {
-    display: block;
-}
-/* Entrance animation keyframes */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    .foot {
+        flex-direction: column;
+        align-items: center;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .col1, .col2 {
+        width: 100%;
     }
 }
 
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: 1.5vh;
+        padding: 0.5rem;
+        height: 10vh;
+    }
 
+    .logo {
+        width: 25vh;
+        transform: translate(-35%, -16.7vh);
+    }
+
+    .grid, .grid2 {
+        grid-template-columns: 1;
+    }
+
+    .grid div, .grid2 div {
+        width: calc(25vh / 6 + 35vw / 6);
+        height: calc(25vh / 6 + 35vw / 6);
+    }
+
+}
