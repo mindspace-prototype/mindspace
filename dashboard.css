@@ -83,13 +83,15 @@ main {
     color: #72D34F;
     cursor: default;
     animation: fadeIn 1s ease-in-out;
+    text-align:left;
+    margin-right: 18rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
-    padding : 4rem;
+    padding : 6rem;
 }
 
 .grid:nth-of-type(2) {
@@ -134,9 +136,22 @@ main {
     height: 40vh;
 }
 
+#book{
+    margin-left: 12rem;
+}
+#org{
+    margin-left: 6rem;
+}
+#art{
+    margin-left: 11rem;
+}
+#conf{
+    margin-left:-4rem;
+}
+
 .grid2 {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     padding: 4rem;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
@@ -153,8 +168,8 @@ main {
     transition: ease 0.4s;
     outline: 3px solid #72D34F;
     box-shadow: rgba(0, 0, 0, 0.3);
-    width: calc(20vh / 4 + 50vw / 4);
-    height: calc(20vh / 3 + 50vw / 3);
+    width: calc(40vh / 4 + 50vw / 4);
+    height: calc(40vh / 3 + 50vw / 3);
     border: 2px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -217,6 +232,7 @@ nav li a:hover{
 .about-section p {
     margin-top: 10px;
     font-weight: 500;
+    width:300px;
 }
 
 .foot-names {
@@ -235,8 +251,8 @@ nav li a:hover{
 }
 
 .foot-names img {
-    width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    width: 250px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
     object-fit: cover;
    
     border-radius: 10px; /* Add border-radius for a consistent look */
@@ -257,7 +273,10 @@ nav li a:hover{
 
 
 h1 {
-    transform: translateX(60%);
+    transform: translateX(55%);
+}
+#about{
+    transform: translateX(23%);
 }
 
 #scrollup{
