@@ -12,14 +12,14 @@ body {
 .bg-img-land img {
     filter: blur(0.7458557588805167vh);
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
 }
 
 /* Heading and subtitle */
 .heading-subtitle {
     text-align: center;
     display: block;
-    transform: translateZ(21.52852529601722vh);
+    transform: translateX(2.628525296vh);
 }
 
 .heading {
@@ -28,16 +28,25 @@ body {
     justify-content: center;
     font-size: 5.382131324004305vh;
     font-weight: 900;
-    margin-top: -45.821313240043054vh;
+    margin-top: -55.821313240043054vh;
     text-shadow: 0 0 0.0458557588805167vh black;
+    padding-bottom: 5vh;
 }
 
 .mind {
     color: #72d34f;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .space {
-    color: #edeff4;
+    color: #ffffff;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .find {
@@ -50,13 +59,13 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #2cbdc2;
+    color: #2cc25c;
     overflow: hidden;
 }
 
 .dynamic-text {
     margin-left: -20px;
-    margin-top: 150px;
+    margin-top: 10px;
     height: 90px;
     line-height: 0px;
     overflow: hidden;
@@ -87,13 +96,6 @@ body {
     content: "";
     position: absolute;
 }
-/* Entry Button */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 /* Entry Button */
 .button {
@@ -101,6 +103,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    
 }
 
 
@@ -115,7 +118,8 @@ button {
     font-size: 18px; /* Adjusted font size */
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease; /* Added smooth transition */
+    transition: all 0.3s ease-in; /*Added smooth transition*/
+    position: relative;
 }
 
 button:hover {
