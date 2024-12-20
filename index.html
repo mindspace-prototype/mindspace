@@ -4,62 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- linking css stylesheet -->
     <link rel="stylesheet" href="style-landing.css">
     <link rel="icon" type="image/png" href="img/Favicon.png">
-    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- aos stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MindSpace</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            overflow-x: hidden;
+        }
+
+        .bg-img-land img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(70%);
+            transition: transform 1s ease-in-out;
+        }
+
+        .bg-img-land img:hover {
+            transform: scale(1.05);
+        }
+
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .loading-circle {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .heading-subtitle {
+            text-align: center;
+            color: #fff;
+            margin-top: 10vh;
+        }
+
+        .heading h1 {
+            margin: 0;
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+
+        .heading .mind {
+            color: #8ecae6;
+        }
+
+        .heading .space {
+            color: #ffb703;
+        }
+
+        .find {
+            margin-top: 10px;
+            width: 60%;
+        }
+
+        .quote-container {
+            position: relative;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .quote {
+            position: absolute;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .quote.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .quote.exiting {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .button button {
+            background: linear-gradient(45deg, #8ecae6, #ffb703);
+            border: none;
+            border-radius: 50px;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ffb703, #8ecae6);
+        }
+
+        .button button a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .heading h1 {
+                font-size: 2.5rem;
+            }
+
+            .find {
+                width: 80%;
+            }
+
+            .button button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-------------------------------------------- Background image --------->
-    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="img/pexels-pixabay-160994.jpg" ></div>
+    <div class="loading-screen">
+        <div class="loading-circle"></div>
+    </div>
 
-    <!------------------------------------------------------- Heading and subtitle -->
+    <div data-aos="fade-in" data-aos-duration="1000" class="bg-img-land"><img src="img/pexels-pixabay-160994.jpg"></div>
+
     <div class="heading-subtitle">
         <div class="heading">
             <h1 class="mind" data-aos="fade-right" data-aos-duration="1000">Mind</h1>
             <h1 class="space" data-aos="fade-left" data-aos-duration="1000">Space</h1>
         </div>
-        <img class="find" src="img/Finding peace of mind, one space at a time.png" alt="">
+        <img class="find" src="img/Finding peace of mind, one space at a time.png" alt="Finding peace of mind">
     </div>
 
-    <!----------------------------------------------------------------------- QUOTES ------------------------------------------------------------>
-    <div data-aos="fade-in" data-aos-duration="1000" class="wrapper">
-        <ul class="dynamic-text">
-            <li><span> "Mental health is not a destination but a process. It's about how you drive, not where you're going." - Noam Shpancer</span></li>
-            <li><span>"The greatest wealth is mental health." - Unknown</span></li>
-            <li><span>"It's not the load that breaks you down, it's the way you carry it."  - Lou Holtz</span></li>
-            <li><span>"Your illness does not define you. Your strength and courage does."  - Unknown</span></li>
-            <li><span>"The bravest thing I ever did was continuing my life when I wanted to die."  - Juliette Lewis</span></li>
-            <li><span>"It's okay to not be okay, as long as you don't stay there."  - Unknown</span></li>
-            <li><span>"The only thing more exhausting than having a mental illness is pretending like you don't."  - Unknown</span></li>
-            <li><span>"Healing takes time, and asking for help is a courageous step."  - Mariska Hargitay</span></li>
-            <li><span>"The worst thing you can do for your mental health is to pretend like you don't need help."  - Unknown</span></li>
-            <li><span>"Mental pain is less dramatic than physical pain, but it is more common and also harder to bear."  - C.S. Lewis</span></li>
-            <li><span>"Never give up on someone with a mental illness. When "I" is replaced by "We", illness becomes wellness."  - Shannon L. Alder</span></li>
-            <li><span>"Your mental health is a priority. Your happiness is an essential. Your self-care is a necessity."  - Unknown</span></li>
-            <li><span>"The more you know yourself, the more clarity there is. Self-knowledge has no end."  - Jiddu Krishnamurti</span></li>
-            <li><span>"Recovery is not one and done. It is a lifelong journey that takes place one day, one step at a time."  - Unknown</span></li>
-            <li><span>"When you're feeling your worst, that's when you get to know yourself the best."  - Leslie Grossman</span></li>
-            <li><span>"Your mind is a powerful thing. When you fill it with positive thoughts, your life will start to change."  - Unknown</span></li>
-            <li><span>"Mental health is just as important as physical health."  - Unknown</span></li>
-            <li><span>"You are allowed to be both a masterpiece and a work in progress simultaneously."  - Sophia Bush</span></li>
-            <li><span>"Mental health needs a great deal of attention. It's the final taboo and it needs to be faced and dealt with."  - Adam Ant</span></li>
+    <div class="quote-container">
+        <div class="quote active">"Mental health is not a destination but a process. It's about how you drive, not where you're going." - Noam Shpancer</div>
+        <div class="quote">"The greatest wealth is mental health." - Unknown</div>
+        <div class="quote">"It's not the load that breaks you down, it's the way you carry it." - Lou Holtz</div>
+        <div class="quote">"Your illness does not define you. Your strength and courage does." - Unknown</div>
     </div>
 
-    <!--------------------------------------------------------------------- ENTRY BUTTON ---------------------------------------------------------------->
     <div class="button">
         <button><a href="dashboard.html">Find your Space</a></button>
     </div>
-    <!-- aos script -->
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Loading screen logic
+        window.addEventListener('load', function() {
+            const loadingScreen = document.querySelector('.loading-screen');
+            loadingScreen.style.display = 'none';
+        });
+
+        // Quote carousel logic
+        const quotes = document.querySelectorAll('.quote');
+        let currentQuoteIndex = 0;
+
+        function showNextQuote() {
+            const currentQuote = quotes[currentQuoteIndex];
+            currentQuote.classList.remove('active');
+            currentQuote.classList.add('exiting');
+
+            setTimeout(() => {
+                currentQuote.classList.remove('exiting');
+                currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+                const nextQuote = quotes[currentQuoteIndex];
+                nextQuote.classList.add('active');
+            }, 500);
+        }
+
+        setInterval(showNextQuote, 3000);
     </script>
 </body>
 </html>

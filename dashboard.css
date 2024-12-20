@@ -5,17 +5,22 @@
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
 }
+
 body {
     width: 100vw;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    background-color: #f4f4f9;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+/* Navigation */
 nav {
     position: sticky;
     z-index: 20;
@@ -31,10 +36,9 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
 
-ul {
+nav ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -42,61 +46,41 @@ ul {
     justify-content: flex-start;
 }
 
-li {
+nav li {
     height: 10vh;
     transform: translateX(100px);
     padding-right: 8vw;
 }
 
-/* select all li except first one */
-li:not(:first-child) {
+nav li:not(:first-child) {
     transform: translateX(260px);
 }
 
-.logo {
-    width: 40vh;
-    position: absolute;
-    left: 100%;
-    transform: translate(-67%, -16.7vh);
+nav li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: ease 1s;
 }
 
-.foot {
-    bottom: 0;
-    width: 100%;
+nav li a:hover {
+    text-shadow: 1px 1px black;
+    font-size: 2.5vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* height: 100vh; */
-    width: 100%;
-    /* background-color: #72D34F; */
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.heading {
-    font-size: 5vh;
-    color: #72D34F;
-    cursor: default;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.grid {
+/* Grid */
+.grid, .grid2 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 2rem;
-    padding : 4rem;
+    padding: 4rem;
 }
 
 .grid:nth-of-type(2) {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.grid div {
+.grid div, .grid2 div {
     width: calc(20vh / 6 + 50vw / 6);
     height: calc(20vh / 6 + 50vw / 6);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -130,16 +114,11 @@ main {
     background-color: black;
 }
 
-#bookimg {
-    height: 40vh;
-}
-
 .grid2 {
-    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     padding: 4rem;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid2 div {
@@ -159,7 +138,7 @@ main {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.grid2 div:hover{
+.grid2 div:hover {
     color: white;
     cursor: pointer;
     font-size: larger;
@@ -168,26 +147,18 @@ main {
     outline: 5px solid #72D34F;
 }
 
-.left{
+.left {
     animation: slideIn 1s ease-in-out;
 }
 
-.right{
+.right {
     animation: slideOut 1s ease-in-out;
 }
 
-nav li a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: ease 1s;
-}
-nav li a:hover{
-    text-shadow: 1px 1px black;
-    font-size: 2.5vh;
-}
-
+/* Footer */
 .foot {
+    bottom: 0;
+    width: 100%;
     padding: 35px;
     display: flex;
     background: #72D34F;
@@ -229,17 +200,15 @@ nav li a:hover{
     width: 100%;
     height: 275px;
     border-radius: 10px;
-    
     margin: 0 10px;
     transition: box-shadow 0.3s ease;
 }
 
 .foot-names img {
-    width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-   
-    border-radius: 10px; /* Add border-radius for a consistent look */
+    border-radius: 10px;
 }
 
 .foot-names h3 {
@@ -254,69 +223,7 @@ nav li a:hover{
     text-decoration: none;
 }
 
-
-
-h1 {
-    transform: translateX(60%);
-}
-
-#scrollup{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: greenyellow;
-    color: white;
-    cursor: pointer;
-    padding: 7px 10px 7px 10px;
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-.foot-names{
-    margin-bottom: 10px;
-}
-
-/* Key Frames */
-@media screen and (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .grid:nth-of-type(2) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid div {
-        width: calc(20vh / 6 + 50vw / 6);
-        height: calc(20vh / 6 + 50vw / 6);
-    }
-    .grid div:hover {
-        background-color: #72D34F;
-        transition: linear 0.1s;
-    }
-    .grid div:not(hover) {
-        background-color: white;
-        transition: linear background-color 2.5s;
-    }
-    .grid div::selection {
-        background-color: black;
-    }
-    .logo {
-        width: 40vh;
-        position: absolute;
-        left: 100%;
-        transform: translate(-40%, -16.7vh);
-    }
-    li:not(:first-child) {
-        display: none;
-    }
-}
-
-
-
-/* back to top button styles */
+/* Back to top button */
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -328,21 +235,21 @@ h1 {
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
-    display: none; /* hide by default */
+    display: none;
     transition: background-color 0.3s, transform 0.3s;
-    z-index: 999; 
-    animation: fadeInUp 0.5s ease; /* Entrance animation */
+    z-index: 999;
+    animation: fadeInUp 0.5s ease;
 }
 
 .back-to-top:hover {
     background-color: #3a8f0f;
-    transform: scale(1.1); /* Add a slight scale effect on hover */
+    transform: scale(1.1);
 }
 
-/* show the button when user scrolls down */
 body.scroll-down .back-to-top {
     display: block;
 }
+
 /* Entrance animation keyframes */
 @keyframes fadeInUp {
     from {
@@ -355,4 +262,29 @@ body.scroll-down .back-to-top {
     }
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    .grid:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid div {
+        width: calc(20vh / 6 + 50vw / 6);
+        height: calc(20vh / 6 + 50vw / 6);
+    }
+
+    .logo {
+        width: 40vh;
+        position: absolute;
+        left: 100%;
+        transform: translate(-40%, -16.7vh);
+    }
+
+    li:not(:first-child) {
+        display: none;
+    }
+}
