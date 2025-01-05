@@ -1,0 +1,415 @@
+[33mcommit 0e2bbfbe2b1dc3e2c0b7b31636b7953364b86cff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdurgeshsh_branch[m[33m, [m[1;31morigin/durgeshsh_branch[m[33m)[m
+Author: Durgesh Shukla <thegdshukla@gmail.com>
+Date:   Sun Jan 5 15:39:23 2025 +0530
+
+    made titles of each section to be on centre
+
+[33mcommit 1b56d0314695ea8a35db1886e0fbe6311027afa6[m
+Author: Durgesh Shukla <thegdshukla@gmail.com>
+Date:   Sun Jan 5 15:21:26 2025 +0530
+
+    made titles to be on centre
+
+[33mcommit 02aad43bd3d2537eabe79b4add0623ed1ad5899b[m
+Author: Durgesh Shukla <thegdshukla@gmail.com>
+Date:   Sun Jan 5 13:14:55 2025 +0530
+
+    made applications title visible
+
+[33mcommit 5b353b0ee4f6400a0cc568132dae9b241b06fa59[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: ed9638b e2a585c
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Tue Jan 23 01:21:31 2024 +0530
+
+    Merge pull request #87 from Rajneesh2223/new/branch
+    
+    New/branch
+
+[33mcommit e2a585c19549f333c21167caf1c076f134932b11[m
+Merge: ec96620 ed9638b
+Author: Rajneesh Kumar <rajneeshkumar2093@gmail.com>
+Date:   Sun Jan 21 20:10:21 2024 +0530
+
+    Merge branch 'main' into new/branch
+
+[33mcommit ed9638b01ff6769a43a2df435d2d1a4b1a985dbe[m
+Merge: c24b611 779a621
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sun Jan 21 17:57:33 2024 +0530
+
+    Merge pull request #82 from Hacxmr/fix/bug-fix
+    
+    Fix/bug fix
+
+[33mcommit ec966205ead47f8c51b7d13f14cebdf136b21aa0[m
+Author: Rajneesh Kumar <rajneeshkumar6267@gmail.com>
+Date:   Sun Jan 21 03:44:02 2024 +0530
+
+    made the contact us footer better
+
+[33mcommit 89f7a97036dd19022c0bcacadce6b1a1210d9fa0[m
+Author: Rajneesh Kumar <rajneeshkumar6267@gmail.com>
+Date:   Sun Jan 21 03:00:13 2024 +0530
+
+    made changes on the horizontal scrolling on the
+    index page
+
+[33mcommit 779a621f9136a93952197bdc5b80294f5ccb4ed4[m
+Author: Mitali Raj <mitali.btmtcs22215@nfsu.ac.in>
+Date:   Sat Jan 20 14:32:12 2024 +0530
+
+    animation updated
+
+[33mcommit c24b611c3cc0c23db9dc9fbc21bf0824bd5989ae[m
+Merge: a0b91d6 8178403
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Jan 18 20:51:45 2024 +0530
+
+    Merge pull request #83 from PranavSangave/main
+    
+    Footer's extra bottom margin (Gap between body and footer) is removed.
+
+[33mcommit a0b91d65e570364f80bb0cab4ef78886e943f4de[m
+Merge: 8950885 3bb51b3
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Jan 18 20:50:06 2024 +0530
+
+    Merge pull request #84 from agastya3636/main
+    
+    Changing color of About to Match UI #68
+
+[33mcommit 3bb51b389d601fbf1c142879f7faed215d295f21[m
+Author: Agastya Kumar Yadav <agastya3636@outlook.com>
+Date:   Thu Jan 18 05:49:44 2024 +0000
+
+    Changing color of About to Match UI #68
+
+[33mcommit 8178403bf0ea7a24ec70aaf695024257a7d507f4[m
+Author: PranavSangave <86056298+PranavSangave@users.noreply.github.com>
+Date:   Thu Jan 18 08:18:03 2024 +0530
+
+    Footer extra white margin below it is removed
+
+[33mcommit cb55525384de70c45d48851e882af5931086a5ad[m
+Author: Mitali Raj <mitali.btmtcs22215@nfsu.ac.in>
+Date:   Thu Jan 18 07:38:36 2024 +0530
+
+    Update style-landing.css
+    
+    Changes made to style-landing.css
+
+[33mcommit eedf23153fd9094c9c56ebb9448d2e5cc60db030[m
+Author: Mitali Raj <mitali.btmtcs22215@nfsu.ac.in>
+Date:   Thu Jan 18 07:33:25 2024 +0530
+
+    Update style-landing.css
+
+[33mcommit 523063c8917f09eadf5588158856cc3ffb395564[m
+Author: Mitali Raj <mitali.btmtcs22215@nfsu.ac.in>
+Date:   Thu Jan 18 07:29:22 2024 +0530
+
+    Update style-landing.css
+    
+    Changes made to the style-landing.css
+
+[33mcommit 895088530358e9c58250cb2583095feb7acd7454[m
+Merge: d9fe14f 851b8b9
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Wed Jan 17 15:08:40 2024 +0530
+
+    Merge pull request #80 from sherabhai/sherabhai
+    
+    Link to Books
+
+[33mcommit 851b8b9418d6ec95c373b936e08e8648d50f8a49[m
+Merge: 031a2d2 d9fe14f
+Author: Shera Bhai <156661163+sherabhai@users.noreply.github.com>
+Date:   Tue Jan 16 23:52:35 2024 +0530
+
+    Merge branch 'main' into sherabhai
+
+[33mcommit 031a2d2ac24dcfebd76e3517714e5e248084d485[m
+Author: Shera Bhai <harsh.yadav1746@gmail.com>
+Date:   Tue Jan 16 23:40:40 2024 +0530
+
+    Link to Books
+
+[33mcommit d9fe14f5ce9926ae9fe528af03680d6b849a8b13[m
+Merge: 91fab5a ba2b2e0
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Tue Jan 16 14:25:55 2024 +0530
+
+    Merge pull request #77 from Kapileswar-Moharana/Back-Top
+    
+    Added Button Including KeyFrames & Functions
+
+[33mcommit ba2b2e01949770e9ddbf59dd6e8cff131c06d581[m
+Merge: c359869 91fab5a
+Author: Kapileswar Moharana <129049677+Kapileswar-Moharana@users.noreply.github.com>
+Date:   Tue Jan 16 11:53:45 2024 +0530
+
+    Merge branch 'main' into Back-Top
+
+[33mcommit c3598692c273aeca219b4aeb0894cdc3d71060c3[m
+Author: Kapileswar-Moharana <kapileswarmoharana32161@gmail.com>
+Date:   Tue Jan 16 11:47:22 2024 +0530
+
+    Update The Page To Add A Buuton Including Key Frames And JavaScript Functions
+
+[33mcommit 91fab5a20e0a0781151abab3c4ec31682f85cef0[m
+Merge: 2b4eb11 75cc7ee
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Tue Jan 16 01:58:57 2024 +0530
+
+    Merge pull request #75 from sherabhai/sherabhai
+    
+    Books Section
+
+[33mcommit 75cc7ee2cf7d0d2f47a94038853e1cc553cfa010[m
+Author: Shera Bhai <harsh.yadav1746@gmail.com>
+Date:   Mon Jan 15 16:16:46 2024 +0530
+
+    Books Section
+
+[33mcommit 2b4eb1173af67fdfb1af85daabedea5af00fa485[m
+Merge: e335973 4a43a04
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sun Jan 14 03:53:08 2024 +0530
+
+    Merge pull request #39 from Tuhin114/main
+    
+    Fix Smooth Scroll Issue #6
+
+[33mcommit e335973ba993b6633d7af9b226dd206c70617017[m
+Merge: d1f3417 c56ad2f
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Jan 6 21:22:51 2024 +0530
+
+    Merge pull request #61 from Kapileswar-Moharana/Favicon
+    
+    Favicon Icon Added
+
+[33mcommit c56ad2f84bee091c51ebb15441fa5659a65de151[m
+Author: Kapileswar Moharana <kapileswarmoharana32161@gmail.com>
+Date:   Thu Jan 4 00:34:30 2024 +0530
+
+    Favicon Icon Added
+
+[33mcommit 4a43a041fa479a293e93d840f9a8a304e3619973[m
+Author: Tuhin Poddar <tuhinpoddar114@gmail.com>
+Date:   Mon Jan 1 10:09:13 2024 +0530
+
+    Fix Smooth Scrool Issue
+
+[33mcommit d1f3417b9bf6c932282812adc422ecf48a09cd77[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Dec 28 16:35:31 2023 +0530
+
+    Create code_of_conduct.md
+
+[33mcommit 8e11316d28685f8b622ad2e67382074ad129c543[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Dec 28 16:34:29 2023 +0530
+
+    Create CONTRIBUTING.md
+
+[33mcommit de5b8ce5dbed09367e9f300ee21c739e23243437[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Dec 28 16:31:42 2023 +0530
+
+    Update README.md
+
+[33mcommit f36fdc26dd2105820bccfd23a9ef82d3516508f0[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Thu Dec 28 13:15:09 2023 +0530
+
+    Update README.md
+
+[33mcommit 1af79faf36d5d332ce8933cac5978685c807aa04[m
+Author: Subroto <subroto.2003@gmail.com>
+Date:   Tue Apr 25 01:29:37 2023 +0530
+
+    footer updated
+
+[33mcommit f795ecf1d1d71ca0b893e58784e21aa63f661276[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 16:27:48 2023 +0530
+
+    update README.md
+
+[33mcommit 6312cdf141118e96261b475951eafdb3dd6ffa2c[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 16:26:16 2023 +0530
+
+    update README.md
+
+[33mcommit db992ea5831993e92400767266a406ccbc6614cd[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sun Apr 16 16:17:39 2023 +0530
+
+    Update dashboard.html
+
+[33mcommit c9aac1b0517b426f882ce06bbb3e9e5144e6246d[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sun Apr 16 15:56:51 2023 +0530
+
+    Update index.html
+
+[33mcommit 7b7e6db38578b82787aa584c99855f05653d0bb4[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sun Apr 16 15:54:05 2023 +0530
+
+    update dashboard.css
+
+[33mcommit 05c7f3dabc098226716f93c94f763311d716ddcf[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 15:23:01 2023 +0530
+
+    update links
+
+[33mcommit 3d962aee8342e78a65dd52f9eaf8dbc9c5811ff5[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 10:44:37 2023 +0530
+
+    label grid items
+
+[33mcommit a67053742023e185b55f93d202c42bab9c33a9c4[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 07:21:55 2023 +0530
+
+    update file structure
+
+[33mcommit e7feff0795407ade63059a20af0abfb6c8ece182[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 07:10:13 2023 +0530
+
+    update button and text in index.html
+
+[33mcommit 75b6e034e0cbaf7359be00a3b865484dd9b30163[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 06:42:26 2023 +0530
+
+    add links to grid
+
+[33mcommit d28d1dbe010d042666b1118d2b2a00d58c17740a[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 03:01:29 2023 +0530
+
+    update grid
+
+[33mcommit dadfc55226d70fc5c80f7fc5d133ddce4e6c9928[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sun Apr 16 02:43:18 2023 +0530
+
+    add grid layout to dashboard
+
+[33mcommit 692316b8dd73db4f8d43d9b405f61b96b664adce[m
+Merge: dc83ccd f8d5e6a
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 23:02:19 2023 +0530
+
+    Merge pull request #1 from mindspace-prototype/subroto
+    
+    Subroto
+
+[33mcommit f8d5e6a514d439fa334533712e45d0d9489bb9fc[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 23:01:37 2023 +0530
+
+    added rest files
+
+[33mcommit 0995ea435cece8ce03310075fd73e22f111dfd22[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:59:51 2023 +0530
+
+    d6
+
+[33mcommit 6b3210c7a17a0bf2c1d96cedfc3bba21be7105d9[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:59:41 2023 +0530
+
+    d5
+
+[33mcommit 56d2f8719773b9f7910f3152104f03c2da9e1731[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:59:32 2023 +0530
+
+    d4
+
+[33mcommit 396ca1dd766a2069d2c6b908b2ba3b5b2d131d17[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:59:20 2023 +0530
+
+    d3
+
+[33mcommit 6a9db37dcd1a665206213060860b8f656b54bb94[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:59:09 2023 +0530
+
+    d2
+
+[33mcommit 4dae4210c373476bf252de99cebc7e193652a0ff[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:58:58 2023 +0530
+
+    d1
+
+[33mcommit b029203fce79b9291cd4bf2c1f47457dd52206b8[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 22:58:42 2023 +0530
+
+    d
+
+[33mcommit dc83ccd5fe1749c2963e3e9ad0ab7a0dc1eb4b57[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 16:36:38 2023 +0530
+
+    style update
+
+[33mcommit bc84c21454483154ba4a59e6421f35cdcdd91aca[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 16:35:12 2023 +0530
+
+    update style.css
+
+[33mcommit 843b1252e009a1dd0251933dddc46be9bd736287[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 16:33:32 2023 +0530
+
+    update landing style
+
+[33mcommit fc32200ccc6214fdbb788502844d36d17255360b[m
+Author: Subroto Banerjee <subroto.2003@gmail.com>
+Date:   Sat Apr 15 16:26:16 2023 +0530
+
+    Added index.html
+
+[33mcommit 2941f11054b8e4577a39a6a8ca76884d7a3b0ccb[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sat Apr 15 13:02:06 2023 +0530
+
+    center logo and fix navbar
+
+[33mcommit cd7e29fd89e0f7c4f0183dc96caef8100ecd9e24[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sat Apr 15 12:54:46 2023 +0530
+
+    update font sizes to vh
+
+[33mcommit edcd260c91c3a2ec1045068d09e66bcfb5a8e99b[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sat Apr 15 12:31:26 2023 +0530
+
+    add navbar with image
+
+[33mcommit 0059d1c8059154fe8403668ecfb99f92652bcd71[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sat Apr 15 12:06:12 2023 +0530
+
+    create files for dashboard
+
+[33mcommit 00a75f585bd68466727525543b7f90fe26fd53aa[m
+Author: Bhaskar Metiya <bhaskarmetiya@gmail.com>
+Date:   Sat Apr 15 11:35:44 2023 +0530
+
+    Initial commit

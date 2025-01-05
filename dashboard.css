@@ -80,10 +80,12 @@ main {
 
 .heading {
     font-size: 5vh;
+    /* text-align: center; */
     color: #72D34F;
     cursor: default;
     animation: fadeIn 1s ease-in-out;
 }
+
 
 .grid {
     display: grid;
@@ -257,7 +259,11 @@ nav li a:hover{
 
 
 h1 {
-    transform: translateX(60%);
+    /* transform: translateX(60%); */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
 }
 
 #scrollup{
