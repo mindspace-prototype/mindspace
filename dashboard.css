@@ -80,6 +80,7 @@ main {
 
 .heading {
     font-size: 5vh;
+    text-align: center;
     color: #72D34F;
     cursor: default;
     animation: fadeIn 1s ease-in-out;
